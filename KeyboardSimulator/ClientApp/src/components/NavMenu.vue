@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -16,13 +16,16 @@
                     <ul class="navbar-nav flex-grow">
                         <li class="nav-item">
                             <router-link :to="{ name: 'Home' }" class="nav-link text-dark">Home</router-link>
-                           
+
                         </li>
                         <li class="nav-item">
                             <router-link :to="{ name: 'Counter' }" class="nav-link text-dark">Counter</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link :to="{ name: 'FetchData' }" class="nav-link text-dark">Fetch Data</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{ name: 'Authorization' }" class="nav-link text-dark">Вход</router-link>
                         </li>
                     </ul>
                 </div>

@@ -13,4 +13,5 @@ namespace KeyboardSimulator.Controllers
     {
        
     }
+    // TODO добавить методы для обратотки post запросов от компонентов autorization и registration
 }

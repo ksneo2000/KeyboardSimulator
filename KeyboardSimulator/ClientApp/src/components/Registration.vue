@@ -1,4 +1,6 @@
+
 <template>
+
     <h1>Counter</h1>
 
     <p>This is a simple example of an Vue component.</p>
@@ -10,6 +12,8 @@
 
 
 <script>
+    // todo полность сделать весть функцианал и исправить html
+
     export default {
         name: "Counter",
         data() {

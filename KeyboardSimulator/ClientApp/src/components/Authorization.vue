@@ -1,16 +1,16 @@
-<template>
+п»ї<template>
     <div class="Authorization">
 
         <h1>Authorization</h1>
 
 
-        <p><b>Введите логин:</b><br></p>
+        <p><b>Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ:</b><br></p>
         <input v-model="name" type="text" id="name" name="name" size="40" />
-        <p><b>Введите пароль:</b><br></p>
+        <p><b>Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ:</b><br></p>
         <input v-model="password" type=password id="password" name="password" size="38" />
         <input type="button" value=" ">
-        <p><b>Если нет учетной записи пройдите регистрацию:</b><br></p>
-        <p><b><a href="Registration">ТУТ</a></b><br></p>
+        <p><b>Р•СЃР»Рё РЅРµС‚ СѓС‡РµС‚РЅРѕР№ Р·Р°РїРёСЃРё РїСЂРѕР№РґРёС‚Рµ СЂРµРіРёСЃС‚СЂР°С†РёСЋ:</b><br></p>
+        <p><b><a href="Registration">РўРЈРў</a></b><br></p>
         <br>
         <br>
         <button v-on:click="clickone">OK</button>
@@ -31,7 +31,7 @@
 
     export default {
 
-
+//undone РїСЂРѕРІРµСЂРёС‚СЊ РІСЃРµ РїСѓС‚Рё Рё РІСЃРµ РёРјРµРЅР° РїРµСЂРµРјРµРЅРЅС‹С… С‚.Рє. РґР°РЅРЅС‹Р№ РєРѕРґ РєРѕРїРёРїР°СЃ СЃ С‚РµСЃС‚РѕРІРѕРіРѕ
         name: 'Autorization',
         components: {
 
