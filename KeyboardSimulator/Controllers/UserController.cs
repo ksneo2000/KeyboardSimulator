@@ -56,7 +56,12 @@ namespace KeyboardSimulator.Controllers
             var newUser = new User
             {
                 Name = userRegistration.Name,
-                Password = userRegistration.Password
+                Surname=userRegistration.Surname,
+                Email = userRegistration.Email,
+                Password = userRegistration.Password,
+                Gender=userRegistration.Gender,
+                DateOfBirth=userRegistration.DateOfBirth
+
             };
 
             using (var KeyboardSimulatorDB = new KeyboardSimulatorContext())

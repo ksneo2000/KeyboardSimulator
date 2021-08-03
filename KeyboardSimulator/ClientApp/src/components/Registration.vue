@@ -7,19 +7,19 @@
         <p><b>Введите Имя:</b><br></p>
         <input v-model="name" type="text" id="name" name="name" size="40" />
         <p><b>Введите Фамилию:</b><br></p>
-        <input v-model="name" type="text" id="surname" name="surname" size="40" />
+        <input v-model="surname" type="text" id="surname" name="surname" size="40" />
         <p><b>Введите E-mail:</b><br></p>
-        <input v-model="name" type="text" id="email" name="email" size="40" />
+        <input v-model="email" type="text" id="email" name="email" size="40" />
         <p><b>Введите пароль:</b><br></p>
         <input v-model="password" type=password id="password" name="password" size="38" />
         <input type="button" value=" ">
         <p><b>Введите повторно пароль:</b><br></p>
-        <input v-model="password2" type=password id="passwordTwo" name="passwordTwo" size="38" />
+        <input v-model="passwordTwo" type=password id="passwordTwo" name="passwordTwo" size="38" />
         <input type="button" value=" ">
         <p><b>Введите пол:</b><br></p>
-        <input v-model="name" type="text" id="gender" name="gender" size="40" />
+        <input v-model="gender" type="text" id="gender" name="gender" size="40" />
         <p><b>Введите Дату рождения:</b><br></p>
-        <input v-model="name" type="text" id="dateofBirth" name="dateofBirth" size="40" />
+        <input v-model="dateOfBirth" type="text" id="dateOfBirth" name="dateOfBirth" size="40" />
         <br>
         <br>
         <span id='hiddenTwoPassword' style="display: none">{{errorMessage}}</span>
@@ -82,17 +82,17 @@
                     const article = {
                         name: this.name,
                         surname: this.surname,
-                        password: this.password,
-                        passwordTwo: this.password2,
                         email: this.email,
+                        password: this.password,
+                        passwordTwo: this.passwordTwo,
                         gender: this.gender,
-                        dateofBirth: this.dateofBirth
+ //                       dateOfBirth: this.dateOfBirth
                     };
 
 
                     axios({
                         method: 'Post',
-                        url: '/UserRegistration/Registration',
+                        url: '/User/Registration',
                         data: article
 
                     })

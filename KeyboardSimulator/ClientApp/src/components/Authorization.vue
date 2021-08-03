@@ -45,7 +45,7 @@
 
                 axios({
                     method: 'Post',
-                    url: '/UserRegistration/Autorization',
+                    url: '/User/Autorization',
                     data: article
 
                 })
