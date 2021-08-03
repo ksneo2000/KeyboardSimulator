@@ -61,7 +61,7 @@ namespace KeyboardSimulator.Controllers
                 Password = userRegistration.Password,
                 Gender=userRegistration.Gender,
                 DateOfBirth=userRegistration.DateOfBirth
-
+                //undone  исправить что бы сохранялась дата т.к. сейчас записывает строку
             };
 
             using (var KeyboardSimulatorDB = new KeyboardSimulatorContext())

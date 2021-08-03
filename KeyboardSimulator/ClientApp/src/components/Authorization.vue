@@ -31,7 +31,7 @@
 
     export default {
 
-//undone проверить все пути и все имена переменных т.к. данный код копипас с тестового
+
         name: 'Autorization',
         components: {
 
