@@ -35,6 +35,26 @@ namespace KeyboardSimulator.Controllers
             }
         }
 
+        [HttpPost("Autorization")]
+
+        public string Autorization([FromBody] User imputUser)
+        {
+            // проверка на null
+
+            imputUser.Password = GetHash(imputUser.Password);
+
+            if (SearchRecordDB(imputUser.Name, imputUser.Password) == true)
+            {
+                using (var KeyboardSimulatorDB = new KeyboardSimulatorContext())
+                {
+
+                    return KeyboardSimulatorDB.Users.SingleOrDefault(user => user.Name == imputUser.Name && user.Password == imputUser.Password).ID.ToString();
+                }
+            }
+
+            return "Пользователя не зарегистрирован.";
+        }
+
         [HttpPost("Registration")]
 
         public string Registration([FromBody] UserRegistration userRegistration)

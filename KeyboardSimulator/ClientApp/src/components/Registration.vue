@@ -16,10 +16,26 @@
         <p><b>Введите повторно пароль:</b><br></p>
         <input v-model="passwordTwo" type=password id="passwordTwo" name="passwordTwo" size="38" />
         <input type="button" value=" ">
-        <p><b>Введите пол:</b><br></p>
-        <input v-model="gender" type="text" id="gender" name="gender" size="40" />
-        <p><b>Введите Дату рождения:</b><br></p>
+
+        <div>
+            <strong>Введите пол:</strong>
+            <br />
+            <select v-model="gender" id="gender" name="gender" style="width:322px">
+                <option value="man">Мужчина</option>
+                <option value="woman">Женщина</option>
+
+            </select>
+        </div>
+
+        <!--        <p><b>Введите Дату рождения:</b><br></p>
         <input v-model="dateOfBirth" type="text" id="dateOfBirth" name="dateOfBirth" size="40" />
+    -->
+        <div>
+            <label for="dateOfBirth" >Введите Дату рождения:</label>
+            <div>
+                <input id="dateOfBirth" type="date" v-model="dateOfBirth"  />
+            </div>
+        </div>
         <br>
         <br>
         <span id='hiddenTwoPassword' style="display: none">{{errorMessage}}</span>
@@ -86,7 +102,7 @@
                         password: this.password,
                         passwordTwo: this.passwordTwo,
                         gender: this.gender,
- //                       dateOfBirth: this.dateOfBirth
+                        dateOfBirth: this.dateOfBirth
                     };
 
 
